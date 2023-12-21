@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows:1fr 3fr 1fr ;
+        }
+
+    .header{
+        background-color: green;
+        font-size: 80px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+		font-style: italic ;
+
+    }
+    .nav{
+        background-color: yellow;
+        font-size: 30px;
+        text-align: center;
+        border:1px solid black;
+		font-style: italic ;
+
+    }
+    .menu{
+        background-color: orange;
+        font-size: 40px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 2;
+		font-style: italic ;
+
+    }
+   
+    .Footer{
+        background-color: blue;
+        font-size: 60px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+		font-style: italic ;
+
+    }
+    @media only screen and (max-width:600px) {
+        .grid-container{
+            display:grid;
+        grid-template-columns:1fr 3fr ;
+        grid-template-rows:1fr 3fr  1fr ;
+        }
+
+    .header{
+        grid-column: span 2;
+    }
+    .menu{
+        grid-column:span 1;
+    }
+    .Footer{
+        grid-column: span 2;
+    }
+}
+@media only screen and (max-width:300px) {
+        .grid-container{
+        grid-template-columns: 3fr ;
+        grid-template-rows:1fr 3fr 3fr 1fr ;
+        }
+    
+    .header{
+        grid-column: span 1;
+    }
+
+    .Footer{
+        grid-column: span 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">FAVORITE ACTORS</div>
+        <div class="nav">
+            <td><a href="aboutme.html">ABOUT ME</a></td><br>
+            <td><a href="movies.html">FAVORITE MOVIES</a></td><br>
+            <td><a href="actors.html">FAVORITE ACTORS</a></td><br>
+            <td><a href="bands.html">FAVORITE BANDS</a></td><br>
+        </div>
+        <div class="menu">TOP 5 ACTORS/ACTRESS:<br>
+		 Leonardo DiCaprio    <img src=leo.jpg width="70" height="80"/><br> 
+		 Robert De Niro     <img src=robert.jpg width="70" height="80"/><br>  
+		  Ryan Gosling     <img src=ryan.jpg width="70" height="80"/><br>
+		  J.K Simmons   <img src=jk.jpg width="70" height="80"/><br>
+          Margot Robbie    <img src=margot.jpg width="70" height="80"/><br>
+		</div>
+    
+        <div class="Footer">CINEMA IS ART</div>
+        
+    </div>
+</body>
+</html>

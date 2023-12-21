@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows:1fr 3fr 1fr ;
+        }
+
+    .header{
+        background-color: green;
+        font-size: 80px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+		font-style: italic ;
+
+    }
+    .nav{
+        background-color: yellow;
+        font-size: 30px;
+        text-align: center;
+        border:1px solid black;
+		font-style: italic ;
+
+    }
+    .menu{
+        background-color: orange;
+        font-size: 60px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 2;
+		font-style: italic bold ;
+
+    }
+   
+    .Footer{
+        background-color: blue;
+        font-size: 60px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+		font-style: italic ;
+
+    }
+    @media only screen and (max-width:600px) {
+        .grid-container{
+            display:grid;
+        grid-template-columns:1fr 3fr ;
+        grid-template-rows:1fr 3fr  1fr ;
+        }
+
+    .header{
+        grid-column: span 2;
+    }
+    .menu{
+        grid-column:span 1;
+    }
+    .Footer{
+        grid-column: span 2;
+    }
+}
+@media only screen and (max-width:300px) {
+        .grid-container{
+        grid-template-columns: 3fr ;
+        grid-template-rows:1fr 3fr 3fr 1fr ;
+        }
+    
+    .header{
+        grid-column: span 1;
+    }
+
+    .Footer{
+        grid-column: span 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">FAVORITE MOVIES</div>
+        <div class="nav">
+            <td><a href="aboutme.html">ABOUT ME</a></td><br>
+            <td><a href="movies.html">FAVORITE MOVIES</a></td><br>
+            <td><a href="actors.html">FAVORITE ACTORS</a></td><br>
+            <td><a href="bands.html">FAVORITE BANDS</a></td><br>
+        </div>
+        <div class="menu">Top 10 Favorite Movies:<br>
+		  La La Land    <img src=lalaland.jpeg width="50" height="80"/>      Birdman      <img src=birdman.jpg width="50" height="80"/><br>  
+		  Little Miss Sunshine     <img src=lms.jpg width="50" height="80"/> Prisoners    <img src=prisoners.jpg width="50" height="80"/><br>
+          Goodfellas    <img src=goodfellas.jpg width="50" height="80"/>      The Pianist      <img src=pianist.jpg width="50" height="80"/><br>  
+		  Eternal Sunshine of the spotless mind     <img src=esotsm.jpg width="50" height="80"/> Whiplash    <img src=whiplash.jpg width="50" height="80"/><br>  		  
+		  Inglourious Basterds    <img src=ib.jpg width="50" height="80"/> The Truman Show   <img src=truman.jpg width="50" height="80"/><br> 
+        </div>
+		  
+    
+        <div class="Footer">CINEMA IS ART</div>
+        
+    </div>
+</body>
+</html>
